@@ -1,7 +1,5 @@
 # Kawpowminer 5090 Docker Edition
 
-![Kawpowminer Logo](https://user-images.githubusercontent.com/placeholder/kawpowminer-logo.png)
-
 ## Overview
 
 This project provides a precompiled, Dockerized version of **Kawpowminer** optimized for NVIDIA 5090 GPUs (tested to ~100MH/s). It is designed for easy deployment and management using Docker Compose, and supports mining Ravencoin (RVN) and other Kawpow-based coins.
