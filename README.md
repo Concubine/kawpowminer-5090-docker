@@ -95,7 +95,7 @@ Copy
 Edit
 + #include <boost/bind/bind.hpp>
 + using namespace boost::placeholders;
-(Add those near the top of the file, just after other includes.)
+
 
 @CMakeLists.txt (top-level)
 diff
