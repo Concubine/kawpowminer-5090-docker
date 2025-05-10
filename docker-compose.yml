@@ -1,0 +1,10 @@
+services:
+  kawpowminer:
+    build: .
+    container_name: kawpowminer
+    runtime: nvidia
+    command: >
+      -P stratum+tcp://<yourwalletaddress>.worker1@rvn.2miners.com:6060
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
