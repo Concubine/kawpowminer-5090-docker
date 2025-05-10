@@ -72,11 +72,36 @@ The miner will start and connect to the specified pool.
 
 ---
 
-## Contributing
+Diff from Source code:
 
-Contributions are welcome! Please open issues or pull requests for improvements, bug fixes, or new features.
+libethash-cuda/CMakeLists.txt
+diff
+Copy
+Edit
+- set(COMPUTE 90)
+- list(APPEND CUDA_NVCC_FLAGS "-gencode arch=compute_${COMPUTE},code=sm_${COMPUTE}")
++ set(CUDA_NVCC_FLAGS
++   -gencode arch=compute_90,code=sm_90
++   -gencode arch=compute_120,code=compute_120
++   --ptxas-options=-v
++   -lineinfo
++   -use_fast_math
++   --disable-warnings
++ )
+libpoolprotocols/getwork/EthGetworkClient.cpp
+diff
+Copy
+Edit
++ #include <boost/bind/bind.hpp>
++ using namespace boost::placeholders;
+(Add those near the top of the file, just after other includes.)
 
----
+CMakeLists.txt (top-level)
+diff
+Copy
+Edit
++ set(Boost_USE_STATIC_LIBS ON)
+find_package(Boost REQUIRED COMPONENTS system filesystem thread)
 
 ## License
 
