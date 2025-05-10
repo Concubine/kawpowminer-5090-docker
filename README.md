@@ -72,9 +72,9 @@ The miner will start and connect to the specified pool.
 
 ---
 
-Diff from Source code:
+##Diff from Source code:
 
-libethash-cuda/CMakeLists.txt
+@libethash-cuda/CMakeLists.txt
 diff
 Copy
 Edit
@@ -88,7 +88,8 @@ Edit
 +   -use_fast_math
 +   --disable-warnings
 + )
-libpoolprotocols/getwork/EthGetworkClient.cpp
+
+@libpoolprotocols/getwork/EthGetworkClient.cpp
 diff
 Copy
 Edit
@@ -96,7 +97,7 @@ Edit
 + using namespace boost::placeholders;
 (Add those near the top of the file, just after other includes.)
 
-CMakeLists.txt (top-level)
+@CMakeLists.txt (top-level)
 diff
 Copy
 Edit
