@@ -49,9 +49,7 @@ The miner will start and connect to the specified pool.
 
 - **Dockerfile:** Uses `nvidia/cuda:12.9.0-runtime-ubuntu22.04` and installs required Boost libraries.
 - **Binary:** Precompiled `kawpowminer` is included in the image.
-- **Logging:** For advanced setups, consider integrating a universal logger such as `observer.logger` for centralized log management.
 
----
 
 ## Compatibility
 
